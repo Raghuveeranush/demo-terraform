@@ -7,7 +7,6 @@ variable "secret_key" {}
 resource "aws_instance" "demo-terraform-cloud" {
   ami = var.ami
   instance_type = var.instance_type
-  subnet_id = var.subnet_id
   tags = {
    Name = "terraform-server"
   }
