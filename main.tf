@@ -3,7 +3,6 @@ variable "region" {}
 variable "instance_type" {}
 variable "access_key" {}
 variable "secret_key" {}
-variable "subnet_id" {}
 
 resource "aws_instance" "demo-terraform-cloud" {
   ami = var.ami
